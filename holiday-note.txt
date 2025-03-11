@@ -1,0 +1,5 @@
+2020-02-24 is not a holiday
+2021-01-01 is a holiday: New Year's Day
+2018-10-28 is not a holiday
+2015-01-01 is a holiday: New Year's Day
+2016-01-01 is a holiday: New Year's Day

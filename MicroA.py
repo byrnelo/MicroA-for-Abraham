@@ -42,16 +42,14 @@ if __name__ == '__main__':
                             # adds the dates to the previously checked dates
                             # checks every 30 seconds
                             if event_date in us_holidays:
-                                print(
-                                    f"{event_date} is a holiday: {us_holidays[event_date]}")
-                                result = print(
-                                    f"{event_date} is a holiday: {us_holidays[event_date]}")
-                                added_dates.append(result)
-
+                                result = f"{event_date} is a holiday: {us_holidays[event_date]}"
                             else:
-                                print(f"{event_date} is not a holiday")
                                 result = f"{event_date} is not a holiday"
-                                added_dates.append(result)
+
+                            print(result)
+                            file.write(result + "\n")
+                            added_dates.append(line)
+
                         except ValueError:
                             print(
                                 "Invalid date format in file. Expected YYYY-MM-DD.")
