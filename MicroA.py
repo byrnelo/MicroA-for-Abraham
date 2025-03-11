@@ -25,10 +25,9 @@ if __name__ == '__main__':
     while True:
 
         with open("personal-calendar.txt", "r") as file:
-            dates = file.readline().strip()
+            dates = file.readlines()
         # Checks all lines in the calendar for dates
         # opens the holiday text file as append, to add new dates
-        if dates:
             with open("holiday-note.txt", "a") as file:
                 for line in dates:
                     line = line.strip()
